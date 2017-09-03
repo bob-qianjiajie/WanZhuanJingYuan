@@ -1,0 +1,31 @@
+<view class="blackcole">
+  <view class="icon-calendar today">
+    <image mode='aspectFill' src="../../../images/wx_sport.png"></image>
+  </view>
+	<view class="icon-calendar today"> 经院运动</view>
+
+  <block wx:for="{{step}}">
+  <!--kaishi-->
+	<view class="user-wrapper">
+		<view class="rank-list">
+      <view class="rank-item">
+        <view class="rank-item__left">
+          <image src="{{item[2]}}" class="rank-avatar"></image>
+          <label class="rank-item__nickname">{{item[3]}}</label>
+          <label class="rank-item__step">今天运动量：<text class="font-green">{{item[1]}}</text> 步</label>
+        </view>
+        <view class="rank-item__right">
+           <label class="rank-item__number rank-item__gold">{{count}}</label>
+        </view>
+      </view>
+    </view>
+	</view>
+  </block>
+
+	<view class="bottom">
+	  <view class="line"></view>
+		<view class="text">就先看到这吧</view>
+		<view class="line"></view>
+	</view>
+
+</view>
